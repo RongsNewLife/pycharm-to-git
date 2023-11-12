@@ -21,8 +21,8 @@ header = ["Name", "Address", "Website", "Phone"]
 worksheet.append(header)
 
 # Define the latitude and longitude ranges
-latitude_range = range(23799174, 48847791, 100000)
-longitude_range = range(-125850770, -59280315, 100000)
+latitude_range = range(23799174, 48847791, 1000000)
+longitude_range = range(-115850770, -100280315, 1000000)
 
 # Iterate through the latitude and longitude ranges
 for latitude in latitude_range:
