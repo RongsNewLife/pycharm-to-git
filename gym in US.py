@@ -1,10 +1,8 @@
 
-
-
 import requests
 import openpyxl
 
-# Replace 'YOUR_API_KEY' with your actual Google Places API key
+# actual Google Places API key
 API_KEY = 'AIzaSyD0ORXJovIPzR3RNckv9O75Y4b-_lazigI'
 
 # Define the base URL for the Google Places API
@@ -21,8 +19,8 @@ header = ["Name", "Address", "Website", "Phone"]
 worksheet.append(header)
 
 # Define the latitude and longitude ranges
-latitude_range = range(23799174, 48847791, 1000000)
-longitude_range = range(-70850770, -59280315, 1000000)
+latitude_range = range(-43780456, -11258289, 300000)
+longitude_range = range(112532650, 154319833, 300000)
 
 # Iterate through the latitude and longitude ranges
 for latitude in latitude_range:
@@ -35,7 +33,7 @@ for latitude in latitude_range:
         params = {
             'location': f'{lat_decimal},{lon_decimal}',
             'radius': 50000,  # You can adjust the radius as needed
-            'keyword': 'gym',
+            'keyword': 'nutritionist',
             'key': API_KEY
         }
 
@@ -68,4 +66,4 @@ for latitude in latitude_range:
                     worksheet.append([name, address, website, phone])
 
 # Save the workbook to an Excel file
-workbook.save("gym_in_US5.xlsx")
+workbook.save("nutritionist_in_AUS.xlsx")
