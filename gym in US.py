@@ -19,8 +19,8 @@ header = ["Name", "Address", "Website", "Phone"]
 worksheet.append(header)
 
 # Define the latitude and longitude ranges
-latitude_range = range(-43780456, -11258289, 300000)
-longitude_range = range(112532650, 154319833, 300000)
+latitude_range = range(23799174, 48547791, 300000)
+longitude_range = range(-125850770, -110280315, 300000)
 
 # Iterate through the latitude and longitude ranges
 for latitude in latitude_range:
@@ -66,4 +66,4 @@ for latitude in latitude_range:
                     worksheet.append([name, address, website, phone])
 
 # Save the workbook to an Excel file
-workbook.save("nutritionist_in_AUS.xlsx")
+workbook.save("nutritionist_in_USA1.xlsx")
