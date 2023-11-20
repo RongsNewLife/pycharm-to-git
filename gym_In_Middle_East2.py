@@ -19,8 +19,8 @@ header = ["Name", "Address", "Website", "Phone"]
 worksheet.append(header)
 
 # Define the latitude and longitude ranges
-latitude_range = range(23799174, 48547791, 300000)
-longitude_range = range(-90850770, -80280315, 300000)
+latitude_range = range(11799174, 31547791, 300000)
+longitude_range = range(51850770, 58280315, 300000)
 
 # Iterate through the latitude and longitude ranges
 for latitude in latitude_range:
@@ -33,7 +33,7 @@ for latitude in latitude_range:
         params = {
             'location': f'{lat_decimal},{lon_decimal}',
             'radius': 50000,  # You can adjust the radius as needed
-            'keyword': 'nutritionist',
+            'keyword': 'gym',
             'key': API_KEY
         }
 
